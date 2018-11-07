@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!--package - идентификатор приложения -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.ertelecom.testapplication">
+    <!--Права необходимые приложению-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--Парамметры единые для всего приложения
+        icon - иконка приложения
+        label - название приложения
+        theme - тема приложения (позволяет настроить стиль)-->
+    <application
+        android:name=".presentation.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--Парамметры конкретной страницы-->
+        <activity android:name=".presentation.ui.activity.MainActivity">
+            <intent-filter>
+                <!--Обязательные парамметры для указания стартовой страницы-->
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
