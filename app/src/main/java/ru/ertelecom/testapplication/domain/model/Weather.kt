@@ -8,5 +8,7 @@ data class Weather(
         val condition: String,
         val windDir: String,
         val pressure: Float,
-        val obsTime: Long
+        val obsTime: Long,
+        val typeTime: TypeTime,
+        val isCurrent: Boolean
 )

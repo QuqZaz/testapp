@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class YandexWeatherPartPesponse(
         @SerializedName("day_short")
-        val dayShort: YandexWeatherShortPartResponse,
+        val dayShort: YandexWeatherShortPartResponse?,
         @SerializedName("night_short")
-        val nightShort: YandexWeatherShortPartResponse
+        val nightShort: YandexWeatherShortPartResponse?
 )
