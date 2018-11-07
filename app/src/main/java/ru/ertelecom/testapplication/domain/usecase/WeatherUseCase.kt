@@ -7,7 +7,7 @@ import ru.ertelecom.testapplication.domain.model.WeatherItem
 import ru.ertelecom.testapplication.domain.repository.WeatherRepository
 
 const val LAT = 59.915188f
-const val LOT = 30.437943f
+const val LOT = 56.140517f
 const val LIMIT = 2
 
 class WeatherUseCase(

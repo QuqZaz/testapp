@@ -18,5 +18,7 @@ data class YandexWeatherFactResponse(
         @SerializedName("pressure_mm")
         val pressure: Float,
         @SerializedName("obs_time")
-        val obsTime: Long
+        val obsTime: Long,
+        @SerializedName("daytime")
+        val daytime: String
 )
